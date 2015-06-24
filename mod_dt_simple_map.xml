@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>DT Simple Map</name>
+	<author>Detalhar</author>
+	<creationDate>24/06/2015</creationDate>
+	<authorEmail>developer@detalharweb.com.br</authorEmail>
+	<authorURL>www.detalharweb.com.br</authorURL>
+	<copyright>Copyright (C) 2015 - Detalhar, All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL or Later</license>
+	<version>1.0.0</version>
+	<description>MOD_DT_SIMPLE_MAP_DESC</description>
+	<files>
+		<filename module="mod_dt_simple_map">mod_dt_simple_map.php</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename>mod_DT_SIMPLE_MAP.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+				<field 
+					name="lat"
+					type="text"
+					label="MOD_DT_SIMPLE_MAP_LAT"
+					DESC="MOD_DT_SIMPLE_MAP_LAT_DESC"
+					default=""/>
+				<field
+					name="lng"
+					type="text"
+					label="MOD_DT_SIMPLE_MAP_LNG"
+					DESC="MOD_DT_SIMPLE_MAP_LNG_DESC"
+					default=""/>
+				<field 
+					name="height"
+					type="text"
+					label="MOD_DT_SIMPLE_MAP_HEIGHT"
+					DESC="MOD_DT_SIMPLE_MAP_HEIGHT" />
+				<field 
+					name="zoomlevel"
+					type="list"
+					label="MOD_DT_SIMPLE_MAP_ZOOM_LEVEL"
+					DESC="MOD_DT_SIMPLE_MAP_ZOOM_LEVEL_DESC"
+					default="8">
+					<option value="0">00</option>
+					<option value="1">01</option>
+					<option value="2">02</option>
+					<option value="3">03</option>
+					<option value="4">04</option>
+					<option value="5">05</option>
+					<option value="6">06</option>
+					<option value="7">07</option>
+					<option value="8">08</option>
+					<option value="9">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+				<field 
+					name="maptypeId"
+					type="list"
+					label="MOD_DT_SIMPLE_MAP_MAP_ID"
+					DESC="MOD_DT_SIMPLE_MAP_MAP_ID_DESC"
+					default="ROADMAP" >
+					<option value="ROADMAP">MOD_DT_SIMPLE_MAP_TYPE_ROADMAP</option>
+					<option value="SATELLIT">MOD_DT_SIMPLE_MAP_TYPE_SATELLIT</option>
+					<option value="HYBRID">MOD_DT_SIMPLE_MAP_TYPE_HYBRID</option>
+					<option value="TERRAIN">MOD_DT_SIMPLE_MAP_TYPE_TERRAIN</option>
+				</field>
+				<field
+					name="marker"
+					type="media"
+					label="MOD_DT_SIMPLE_MAP_MARKER"
+					DESC="MOD_DT_SIMPLE_MAP_MARKER_DESC"
+				 />
+		</fieldset>
+		<fieldset name="MOD_DT_SIMPLE_MAP_USER_CONTROL">
+			<field
+				name="panControl"
+				type="radio"
+				label="MOD_DT_MAP_PAN_CONTROL"
+				DESC="MOD_DT_MAP_PAN_CONTROL_DESC"
+				default="false"
+				class="btn-group">
+				<option value="true">JYES</option>
+				<option value="false">JNO</option>
+			</field>
+			
+		</fieldset>
+		<fieldset name="advanced">
+			<field
+				name="layout"
+				type="modulelayout"
+				label="JFIELD_ALT_LAYOUT_LABEL"
+				DESC="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				/>
+			<field
+				name="moduleclass_sfx"
+				type="textarea"
+				rows="3"
+				label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				DESC="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		</fieldset>
+	</fields>
+	</config>
+</extension>

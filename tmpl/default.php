@@ -29,13 +29,24 @@ defined('_JEXEC') or die('Restricted Access');
  	var map = new google.maps.Map(document.getElementById('dt-simple-map-canvas'),
 	mapOptions);
 
-	var image = "<?php echo $baseUrl .$marker ?>" || ;
+	var contentString = "<?php echo $ContentInfo ?>";
 	
+	var image = "<?php echo $baseUrl .$marker ?>";
+	
+	var infoWindow = new google.maps.InfoWindow({
+		content:contentString,
+	});
+
 	var marker = new google.maps.Marker({
 		position:myLatLng,
 		map:map,
-		icon: image,
+		title: 'Mapa Detalhar',
 	});
+
+	google.maps.event.addListener(marker, 'click', function(){
+		infoWindow.open(map, marker);
+	});
+
 	    marker.setMap(map);
  }
  initialize();

@@ -20,6 +20,7 @@ $height 			= $params->get('height', 300);
 $zoomLevel 			= $params->get('zoomlevel',8);
 $mapTypeId 			= $params->get('maptypeId', 'ROADMAP');
 $marker 			= $params->get('marker');
+$ContentInfo 		= $params->get('infoWindow');
 $panControl 		= $params->get('panControl', false);
 
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));

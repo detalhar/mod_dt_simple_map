@@ -23,24 +23,24 @@
 					name="lat"
 					type="text"
 					label="MOD_DT_SIMPLE_MAP_LAT"
-					DESC="MOD_DT_SIMPLE_MAP_LAT_DESC"
+					description="MOD_DT_SIMPLE_MAP_LAT_DESC"
 					default=""/>
 				<field
 					name="lng"
 					type="text"
 					label="MOD_DT_SIMPLE_MAP_LNG"
-					DESC="MOD_DT_SIMPLE_MAP_LNG_DESC"
+					description="MOD_DT_SIMPLE_MAP_LNG_DESC"
 					default=""/>
 				<field 
 					name="height"
 					type="text"
 					label="MOD_DT_SIMPLE_MAP_HEIGHT"
-					DESC="MOD_DT_SIMPLE_MAP_HEIGHT" />
+					description="MOD_DT_SIMPLE_MAP_HEIGHT_DESC" />
 				<field 
 					name="zoomlevel"
 					type="list"
 					label="MOD_DT_SIMPLE_MAP_ZOOM_LEVEL"
-					DESC="MOD_DT_SIMPLE_MAP_ZOOM_LEVEL_DESC"
+					description="MOD_DT_SIMPLE_MAP_ZOOM_LEVEL_DESC"
 					default="8">
 					<option value="0">00</option>
 					<option value="1">01</option>
@@ -68,7 +68,7 @@
 					name="maptypeId"
 					type="list"
 					label="MOD_DT_SIMPLE_MAP_MAP_ID"
-					DESC="MOD_DT_SIMPLE_MAP_MAP_ID_DESC"
+					description="MOD_DT_SIMPLE_MAP_MAP_ID_DESC"
 					default="ROADMAP" >
 					<option value="ROADMAP">MOD_DT_SIMPLE_MAP_TYPE_ROADMAP</option>
 					<option value="SATELLIT">MOD_DT_SIMPLE_MAP_TYPE_SATELLIT</option>
@@ -79,15 +79,23 @@
 					name="marker"
 					type="media"
 					label="MOD_DT_SIMPLE_MAP_MARKER"
-					DESC="MOD_DT_SIMPLE_MAP_MARKER_DESC"
+					description="MOD_DT_SIMPLE_MAP_MARKER_DESC"
 				 />
+				 <field
+				 	name="infoWindow"
+				 	type="textarea"
+				 	cols="3"
+				 	rows="4"
+				 	label="MOD_DT_SIMPLE_MAP_INFO_WINDOW"
+				 	description="MOD_DT_SIMPLE_MAP_INFO_WINDOW_DESC"
+				  />
 		</fieldset>
 		<fieldset name="MOD_DT_SIMPLE_MAP_USER_CONTROL">
 			<field
 				name="panControl"
 				type="radio"
 				label="MOD_DT_MAP_PAN_CONTROL"
-				DESC="MOD_DT_MAP_PAN_CONTROL_DESC"
+				description="MOD_DT_MAP_PAN_CONTROL_DESC"
 				default="false"
 				class="btn-group">
 				<option value="true">JYES</option>
@@ -100,14 +108,14 @@
 				name="layout"
 				type="modulelayout"
 				label="JFIELD_ALT_LAYOUT_LABEL"
-				DESC="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
 				/>
 			<field
 				name="moduleclass_sfx"
 				type="textarea"
 				rows="3"
 				label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-				DESC="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
 		</fieldset>
 	</fields>
 	</config>

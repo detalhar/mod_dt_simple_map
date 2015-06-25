@@ -4,7 +4,7 @@
 # ---------------------------------------------------------------------------------
 # author    Detalhar http://www.detalharweb.com.br
 # Copyright (C) 2015 DetalharWeb.com.br. All Rights Reserved.
-# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# @license - GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
 # Website: http://www.detalharweb.com.br
 ----------------------------------------------------------------------------------*/
 

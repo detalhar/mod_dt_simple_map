@@ -6,7 +6,7 @@
 	<authorEmail>developer@detalharweb.com.br</authorEmail>
 	<authorURL>www.detalharweb.com.br</authorURL>
 	<copyright>Copyright (C) 2015 - Detalhar, All rights reserved</copyright>
-	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL or Later</license>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<version>1.0.0</version>
 	<description>MOD_DT_SIMPLE_MAP_DESC</description>
 	<files>

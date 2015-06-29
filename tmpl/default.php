@@ -38,8 +38,7 @@ defined('_JEXEC') or die('Restricted Access');
  		mapTypeId: google.maps.MapTypeId.<?php echo $mapTypeId ?>
  	};	
 
- 	map = new google.maps.Map(document.getElementById('dt-simple-map-canvas'),
-	mapOptions);
+ 	map = new google.maps.Map(document.getElementById('dt-simple-map-canvas'), mapOptions);
 
 	contentString = "<?php echo $ContentInfo ?>";
 
@@ -73,8 +72,7 @@ defined('_JEXEC') or die('Restricted Access');
 
 	    marker.setMap(map);
  }
- initialize();
- </script>
+google.maps.event.addDomListener(window, 'load', initialize); </script>
  <div class="dt-simple-map<?php echo $moduleclass_sfx; ?>">
  	<div id="dt-simple-map-canvas" style="margin:0; padding:0;width:100%; height:<?php echo $height?>px;"></div>
  </div>

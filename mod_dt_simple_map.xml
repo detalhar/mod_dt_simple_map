@@ -76,6 +76,16 @@
 					<option value="TERRAIN">MOD_DT_SIMPLE_MAP_TYPE_TERRAIN</option>
 				</field>
 				<field
+				name="panControl"
+				type="radio"
+				label="MOD_DT_SIMPLE_MAP_PAN_CONTROL"
+				description="MOD_DT_SIMPLE_MAP_PAN_CONTROL_DESC"
+				default="false"
+				class="btn-group">
+				<option value="true">JYES</option>
+				<option value="false">JNO</option>
+			</field>
+				<field
 					name="marker"
 					type="media"
 					label="MOD_DT_SIMPLE_MAP_MARKER"
@@ -90,19 +100,6 @@
 				 	description="MOD_DT_SIMPLE_MAP_INFO_WINDOW_DESC"
 				 	filter="raw"
 				  />
-		</fieldset>
-		<fieldset name="MOD_DT_SIMPLE_MAP_USER_CONTROL">
-			<field
-				name="panControl"
-				type="radio"
-				label="MOD_DT_MAP_PAN_CONTROL"
-				description="MOD_DT_MAP_PAN_CONTROL_DESC"
-				default="false"
-				class="btn-group">
-				<option value="true">JYES</option>
-				<option value="false">JNO</option>
-			</field>
-			
 		</fieldset>
 		<fieldset name="advanced">
 			<field

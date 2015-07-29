@@ -16,6 +16,9 @@
 		<filename>mod_DT_SIMPLE_MAP.xml</filename>
 		<filename>index.html</filename>
 	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="DT Simple Map Update">https://github.com/detalhar/updating-extensions/blob/master/mod_dt_simple_map_update.xml</server>
+	</updateservers>
 	<config>
 		<fields name="params">
 		<fieldset name="basic">

@@ -13,7 +13,7 @@
 		<filename module="mod_dt_simple_map">mod_dt_simple_map.php</filename>
 		<folder>language</folder>
 		<folder>tmpl</folder>
-		<filename>mod_DT_SIMPLE_MAP.xml</filename>
+		<filename>mod_dt_simple_map.xml</filename>
 		<filename>index.html</filename>
 	</files>
 	<config>
